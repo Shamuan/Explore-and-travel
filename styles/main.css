@@ -71,22 +71,16 @@ h3{
     bottom: 50px;
     left: 0;
 }
-select{
-    height: 52px;
-    border: 0.8px solid #AFB0B9;
-    box-sizing: border-box;
-    border-radius: 6px;
-    outline: none;
+.select-button{
+    width: 170px;
     cursor: pointer;
+    outline: none;
 }
 form{
     display: flex;
+    max-width: 400px;
     flex-wrap: wrap;
 }
-form>*{
-    margin-top: 16px;
-}
-
 .h-explore{
     padding-top: 90px;
 }
@@ -187,6 +181,7 @@ form>*{
     flex: 0 0 20%;
     height: 100%;
     opacity: 0;
+    cursor: pointer;
 }
 .rating-value{
     padding: 0 0 0 10px;
@@ -317,9 +312,19 @@ footer>h4{
     font-size: 24px;
     margin: 0 12px 12px 12px;
 }
+@media screen and (min-width:540px) {
+    .my-nav-bar-menu {
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+}
 @media screen and (min-width: 768px) {
     .featured-view-all{
         justify-content: space-between;
+    }
+    .my-nav-bar-menu {
+        position: static;
     }
     .stories-card{
         text-align: left;
@@ -333,6 +338,9 @@ footer>h4{
     }
     .section-paragraph{
         width: 400px;
+    }
+    .read-more{
+        position: absolute;
     }
 }
 @media screen and (min-width: 992px) {
