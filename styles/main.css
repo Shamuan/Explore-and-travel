@@ -79,16 +79,18 @@ select{
     outline: none;
     cursor: pointer;
 }
-form>*{
-    margin: 15px 30px 15px 0;
+form{
+    display: flex;
+    flex-wrap: wrap;
 }
-
+form>*{
+    margin-top: 16px;
+}
 
 .h-explore{
     padding-top: 90px;
 }
 .section-paragraph{
-    width: 400px;
     padding: 20px 0 32px 0;
     font-family: 'Mulish';
     font-style: normal;
@@ -97,7 +99,7 @@ form>*{
     color: #7D7987;
 }
 .featured-view-all{
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 0 40px 0;
 }
@@ -316,6 +318,9 @@ footer>h4{
     margin: 0 12px 12px 12px;
 }
 @media screen and (min-width: 768px) {
+    .featured-view-all{
+        justify-content: space-between;
+    }
     .stories-card{
         text-align: left;
     }
@@ -325,6 +330,9 @@ footer>h4{
     .stories-card>img{
         height: 280px;
         width: 100%;
+    }
+    .section-paragraph{
+        width: 400px;
     }
 }
 @media screen and (min-width: 992px) {
