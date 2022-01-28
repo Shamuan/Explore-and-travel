@@ -266,8 +266,7 @@ form>*{
     text-align: center;
 }
 .stories-card>img{
-    height: 280px;
-    width: 100%;
+    width: 260px;
     border-radius: 8px;
 }
 h4{
@@ -322,6 +321,10 @@ footer>h4{
     }
     .testimonials{
         padding-bottom: 140px;
+    }
+    .stories-card>img{
+        height: 280px;
+        width: 100%;
     }
 }
 @media screen and (min-width: 992px) {
