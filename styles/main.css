@@ -74,7 +74,10 @@ h3{
 .select-button{
     width: 170px;
     cursor: pointer;
-    outline: none;
+}
+.select-button:focus{
+    border-color: #FB8F1D;
+    box-shadow: 0 0 0 0.2rem rgba(252, 152, 1, 0.952);
 }
 form{
     display: flex;
